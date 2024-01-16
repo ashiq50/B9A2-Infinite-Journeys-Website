@@ -344,6 +344,75 @@ header {
   font-weight: 800;
 }
 
+/* why choose us styles */
+.main-three {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.choose-banner {
+  margin-top: 100px;
+}
+.choose-banner h3 {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.choose-banner p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+}
+
+.service-one {
+  grid-area: service-one;
+}
+
+.service-two {
+  grid-area: service-two;
+}
+
+.service-three {
+  grid-area: service-three;
+}
+
+.service-container {
+  display: grid;
+  margin-top: 40px;
+  gap: 40px;
+  grid-template-areas:
+    "service-one service-one service-one service-two service-two service-two"
+    ". . service-three service-three . .";
+}
+
+.service-one {
+  padding: 32px 55px 32px 32px;
+  width: 500px;
+  height: 250px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background-color: rgba(251, 181, 99, 0.05);
+}
+
+.service-two {
+  padding: 32px 55px 32px 32px;
+  width: 500px;
+  height: 250px;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background-color: rgba(41, 206, 246, 0.05);
+}
+
+.service-three {
+  padding: 32px 55px 32px 32px;
+  width: 500px;
+  height: 250px;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background-color: rgba(233, 68, 68, 0.05);
+}
+
 /* Responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .menu {
@@ -515,14 +584,36 @@ header {
     top: 0;
     left: 0;
   }
-  .text, .sri, .bandar, .bangla, .kas, .usa{
+  .text,
+  .sri,
+  .bandar,
+  .bangla,
+  .kas,
+  .usa {
     position: absolute;
-    bottom: 200px;
+    bottom: 150px;
     left: 100px;
     color: white;
     font-size: 28px;
     text-align: center;
     font-weight: 800;
-    
+  }
+
+  /* why choose us responsive */
+  .service-container {
+    grid-template-areas:
+      "service-one"
+      "service-two"
+      "service-three";
+  }
+  .service-container{
+    gap: 16px;
+  }
+  .service-one,
+  .service-two,
+  .service-three {
+    width: 335px;
+    height: 289px;
+    margin: 0 auto;
   }
 }
